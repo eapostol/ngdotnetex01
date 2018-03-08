@@ -6,7 +6,8 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "//": "changed outDir to point to wwwroot",
+      "outDir": "wwwroot",
       "assets": [
         "assets",
         "favicon.ico"
