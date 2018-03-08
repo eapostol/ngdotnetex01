@@ -22,8 +22,9 @@ namespace AngularWithDotNetCoreEx
         // GET api/values/5
         // also public IEnumerable<string>
         //  or public string[]
-        [HttpGet("{id}")]
-        public IEnumerable<string> Get(int id)
+        // also remove ("{id}") from annotation. we don't need ID (yet)
+        [HttpGet]
+        public IEnumerable<string> Get()
         {
             return new string[] { "Hello", "World" };
         }
