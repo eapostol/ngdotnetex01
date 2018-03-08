@@ -26,7 +26,7 @@ namespace AngularWithDotNetCoreEx
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "Hello", "World" };
+            return new string[] { "This","exemplifies","live","updates","during","development" };
         }
         /*
         // POST api/values
