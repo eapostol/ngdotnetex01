@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Example of Angular CLI with DotNet Core';
-  apiValues: string[] = [];
+  apiData: string[] = [];
 
   // dependency injection used to inject the httpService
   constructor(private _httpService: Http) { }
@@ -16,7 +16,7 @@ export class AppComponent {
   // standard workflow: load the data before the view is rendered
   ngOnInit() {
       this._httpService.get('/api/values').subscribe(values => {
-         this.apiValues = values.json() as string[];
+         this.apiData = values.json() as string[];
       });
    }
 
