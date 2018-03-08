@@ -38,3 +38,4 @@ Thumbs.db
 
 # dotCover
 *.dotCover
+.vs/AngularWithDotNetCoreEx/xs/UserPrefs.xml
