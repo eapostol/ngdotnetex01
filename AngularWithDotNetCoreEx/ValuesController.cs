@@ -12,19 +12,22 @@ namespace AngularWithDotNetCoreEx
     public class ValuesController : Controller
     {
         // GET: api/values
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        // removed for demo
+        //[HttpGet]
+        //public IEnumerable<string> Get()
+        //{
+         //   return new string[] { "value1", "value2", "value3" };
+        //}
 
         // GET api/values/5
+        // also public IEnumerable<string>
+        //  or public string[]
         [HttpGet("{id}")]
-        public string Get(int id)
+        public IEnumerable<string> Get(int id)
         {
-            return "value";
+            return new string[] { "Hello", "World" };
         }
-
+        /*
         // POST api/values
         [HttpPost]
         public void Post([FromBody]string value)
@@ -42,5 +45,6 @@ namespace AngularWithDotNetCoreEx
         public void Delete(int id)
         {
         }
+        */
     }
 }
