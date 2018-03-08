@@ -4,14 +4,29 @@ The information presented in this project illustrates an Angular front-end makin
 
 ![screenshot](ex01_screenshot.png) "Initial Build"
 
+To start the server while developing
 
+In terminal, 
+
+`dotnet watch run`
+
+(You can also run it within visual studio)
+
+To start the transpilation and watching of Angular code updates while developing,
+
+In terminal, within the src folder,
+
+`npm start`
+
+(actual code invoked is within package.json)
+
+and then browse to http://localhost:4200
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
 
-## Development server
+## Code scaffolding
 
-Run `npm start` to launch dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files. It is set up with proxy to go through the ASP.NET Core local dev server at http://localhost:5000 via the proxy.config.json file.
-
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
@@ -19,11 +34,12 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io). Unit tests will be created for this project.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Additional Information
-contact Edward Apostol by e-mail.
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

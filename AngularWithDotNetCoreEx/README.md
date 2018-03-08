@@ -4,13 +4,25 @@ The information presented in this project illustrates an Angular front-end makin
 
 ![screenshot](ex01_screenshot.png) "Initial Build"
 
+To start the server while developing
 
+In terminal, 
+
+`dotnet watch run`
+
+(You can also run it within visual studio)
+
+To start the transpilation and watching of Angular code updates while developing,
+
+In terminal, within the src folder,
+
+`npm start`
+
+(actual code invoked is within package.json)
+
+and then browse to http://localhost:4200
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
