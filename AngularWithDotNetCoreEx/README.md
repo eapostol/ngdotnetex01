@@ -1,5 +1,11 @@
 # Welcome to Angular-CLI to .NET Core Example
 
+The information presented in this project illustrates an Angular front-end making a service call to a .NET Core backend.
+
+[screenshot]: //ex01_screenshot.png "Initial Build"
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
 
 ## Development server
