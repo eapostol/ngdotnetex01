@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 // added httpService
 import { Http } from '@angular/http'
 
@@ -7,7 +7,7 @@ import { Http } from '@angular/http'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Example of Angular CLI with DotNet Core';
   apiData: string[] = [];
 
@@ -17,6 +17,7 @@ export class AppComponent {
   // standard workflow: load the data before the view is rendered
   ngOnInit() {
       this._httpService.get('/api/values').subscribe(values => {
+         console.log(values.json() as string[]);
          this.apiData = values.json() as string[];
       });
    }
