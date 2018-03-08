@@ -2,7 +2,7 @@
 
 The information presented in this project illustrates an Angular front-end making a service call to a .NET Core backend.
 
-![screenshot](//ex01_screenshot.png) "Initial Build"
+![screenshot](ex01_screenshot.png) "Initial Build"
 
 
 
